@@ -27,4 +27,12 @@ task("balance", "Get ETH balance of an address")
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    rinkeby: {
+      url: "https://rinkeby.infura.io/v3/",
+      accounts: [
+        "1a00cc3ea46b5c4069f3814c20a38506869ba4f8b5214a8b1cd1c59f147f8846",
+      ],
+    },
+  },
 };
